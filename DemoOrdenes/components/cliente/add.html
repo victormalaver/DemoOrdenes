@@ -1,0 +1,89 @@
+<div data-role="view" data-title="Add" data-model="app.cliente.addItemViewModel" data-bind="events: { show: onShow }" id="clienteModelAddItemView">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span>Create</span>
+            <a data-role="backbutton" data-align="left">Cancel</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: onSaveClick }">Save</a>
+        </div>
+    </header>
+    <!-- START_CUSTOM_CODE_clienteModel -->
+    <!-- END_CUSTOM_CODE_clienteModel -->
+    <div id="editableListForm8" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Razón Social</span>
+
+                        <input id="razon" data-bind="value: addFormData.razon" placeholder="Razón social del cliente" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>RUC</span>
+
+                        <input id="ruc" data-bind="value: addFormData.ruc" placeholder="RUC del cliente" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Dirección</span>
+
+                        <input id="direccion" data-bind="value: addFormData.direccion" placeholder="Dirección del cliente" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Contacto</span>
+
+                        <input id="contacto" data-bind="value: addFormData.contacto" placeholder="Contacto del cliente" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Celular</span>
+
+                        <input id="celular" data-bind="value: addFormData.celular" placeholder="Celular del contacto" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Latitud</span>
+
+                        <input id="latitud" data-bind="value: addFormData.latitud" placeholder="Latitud" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Longitud</span>
+
+                        <input id="longitud" data-bind="value: addFormData.longitud" placeholder="Longitud" type="text">
+                    </label>
+
+                </li>
+            </ul>
+        </form>
+        <!-- START_CUSTOM_CODE_editableListForm8 -->
+        <!-- END_CUSTOM_CODE_editableListForm8 -->
+    </div>
+</div>

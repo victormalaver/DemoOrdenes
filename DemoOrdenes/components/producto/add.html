@@ -1,0 +1,57 @@
+<div data-role="view" data-title="Add" data-model="app.producto.addItemViewModel" data-bind="events: { show: onShow }" id="productoModelAddItemView">
+    <header data-role="header">
+        <div data-role="navbar" class="header-text">
+            <span>Crear producto</span>
+            <a data-role="backbutton" data-align="left">Cancel</a>
+            <a data-role="button" data-align="right" data-bind="events: { click: onSaveClick }">Save</a>
+        </div>
+    </header>
+    <!-- START_CUSTOM_CODE_productoModel -->
+    <!-- END_CUSTOM_CODE_productoModel -->
+    <div id="editableListForm2" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Nombre</span>
+
+                        <input id="nombre" data-bind="value: addFormData.nombre" placeholder="Nombre del producto" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Precio</span>
+
+                        <input id="precio" data-bind="value: addFormData.precio" placeholder="Precio del producto" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+
+                    <label class="km-label-above">
+
+                        <span>Unidad de medida</span>
+
+                        <input id="unidad" data-bind="value: addFormData.unidad" placeholder="Unidad de medida del producto" type="text">
+                    </label>
+
+                </li>
+                <li class="form-content-item">
+                    <label class="km-label-above">
+
+                        <span>Descripción</span>
+
+                        <textarea rows="7" data-bind="value: addFormData.descripcion"></textarea>
+                    </label>
+                </li>
+            </ul>
+        </form>
+        <!-- START_CUSTOM_CODE_editableListForm2 -->
+        <!-- END_CUSTOM_CODE_editableListForm2 -->
+    </div>
+</div>
